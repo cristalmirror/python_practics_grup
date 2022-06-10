@@ -1,3 +1,5 @@
+
+##este codigo se encuentra en proceso de escritura y desarrollo
 #este programa contiene la insterfaz qu el usurio usara para
 #manipular loos datos
 from datetime import date
