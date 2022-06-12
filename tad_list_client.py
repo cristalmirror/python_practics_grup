@@ -15,7 +15,7 @@ def remove_client(list_client,ty_se):
 
     count=0
     while count != len(list_client):#se introduce la lista y el tipo de servicio
-                                          #para recorrer toda lista de los clientes    
+                                    #para recorrer toda lista de los clientes    
         if ty_se == list_client[count] :#si el tipo de cliente coincide se elimina de la lista
 
             list_client.remove(cli)
@@ -65,3 +65,22 @@ def list_promotion_clients(list_client):
         cont+=1
         
     return list_client_2 #devuelve la lista completa
+
+
+def browser_client(list_client,date1,date2,date3):
+    
+    pos=0
+    while
+    (list_client[pos].client[0]!=view_name(date1))and
+    (list_client[pos].client[1]!=view_surname(date2))and
+    (list_client[pos].client[5]!=view_num_clie(date3))and
+    :
+
+        pos+=1
+    else:
+        
+        return list_client[pos]
+
+
+
+        

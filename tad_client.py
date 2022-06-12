@@ -19,11 +19,11 @@ def load_client(client,name,surnames,serv_type,serv_price,num_clie):
     client[5]=num_clie
     return client
 
-def view_name(client):#devuelve el tipo de servicio del cliente
+def view_name(client):#devuelve el nombrel del cliente
 
     return client[0]
 
-def view_surname(client):#devuelve el tipo de servicio del cliente
+def view_surname(client):#devuelve el apellido del cliente
 
     return client[1]
 
@@ -36,11 +36,11 @@ def view_serv_type(client):#devuelve el tipo de servicio del cliente
 
     return client[3]
 
-def view_serv_price(client):#devuelve el tipo de servicio del cliente
+def view_serv_price(client):#devuelve el precio del servicio
 
     return client[4]
 
-def view_num_clie(client):#devuelve el tipo de servicio del cliente
+def view_num_clie(client):#devuelve el numero de cliente
 
     return client[5]
 
@@ -53,7 +53,8 @@ def modify_name(client,name):
     client[0]=name
     return client
 
-def modify_surname(client,surname):
+#modifica el apellido
+def modify_surname(client,surname): 
 
     client[1]=name
     return client

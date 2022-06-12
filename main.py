@@ -1,6 +1,4 @@
-
-##este codigo se encuentra en proceso de escritura y desarrollo
-#este programa contiene la insterfaz qu el usurio usara para
+1#este programa contiene la insterfaz qu el usurio usara para
 #manipular loos datos
 from datetime import date
 from tad_list_client import*
@@ -62,7 +60,8 @@ while opc == 1:
 
 #introduce los datos al tad lista de cliete que se creo
 def option_1():
-
+    
+    print("\***menu opcion 1***\n")
     n_c=creat_client()
     na=input("\nintrodusca el nombre del cliente ")
     sna=input("\nintrodusca el apellido del cliente ")
@@ -80,6 +79,7 @@ def option_2():
     opc3=1
 
     while opc3==1:
+        print("\***menu opcion 2***\n")
         opc4=input("\nintrodusca el dato que desea modificar\n
                     modificar nombre              (1)
                     modificar apellido            (2)
@@ -88,18 +88,136 @@ def option_2():
                     modificar precio del servicio (5)
                     modificar numero de clinet    (6)
                     >>>")
-        if:
-        elif:
-        elif:
-        elif:
-        elif:
-        elif:
-        elif:
+        if opc4 ==1:
+            print("\ncambio de nombre")
+            #se ingresa los parametros de busqueda
+            aux1=input("\ninstrodusca nombre actual>>>")
+            aux2=input("\ninstrodusca el apellido actual>>>")
+            aux3=input("\nintrodusca el nuero de cliente")
+            
+            #se busca el cliente que conisida con los datos de busqueda
+            data=browser_client(l_c,aux1,aux2,aux3)
+
+            #se modifica el dato relevante
+            aux1=input("\ninstrodusca un nuevo nombre")
+            clie_mod=modify_name(data,aux1)
+
+            #elimina el cliente sin modifica de la lista de clintes
+            l_c=delate_client(l_c,data)
+
+            #agrega al cliente con la modificacion
+            load_client(l_c,clie_mod)
+            
+            
+        elif opc4==2:
+            print("\ncambio de apellido")
+             #se ingresa los parametros de busqueda
+            aux1=input("\ninstrodusca nombre actual>>>")
+            aux2=input("\ninstrodusca el apellido actual>>>")
+            aux3=input("\nintrodusca el nuero de cliente")
+            
+            #se busca el cliente que conisida con los datos de busqueda
+            data=browser_client(l_c,aux1,aux2,aux3)
+
+            #se modifica el dato relevante
+            aux1=input("\ninstrodusca un nuevo nombre")
+            clie_mod=modify_surname(data,aux1)
+
+            #elimina el cliente sin modifica de la lista de clintes
+            l_c=delate_client(l_c,data)
+
+            #agrega al cliente con la modificacion
+            load_client(l_c,clie_mod)
+           
+        elif opc4==3:
+             print("\ncambio de fecha de alta")
+             #se ingresa los parametros de busqueda
+            aux1=input("\ninstrodusca nombre actual>>>")
+            aux2=input("\ninstrodusca el apellido actual>>>")
+            aux3=input("\nintrodusca el nuero de cliente")
+            
+            #se busca el cliente que conisida con los datos de busqueda
+            data=browser_client(l_c,aux1,aux2,aux3)
+
+            #se modifica el dato relevante
+            aux1=input("\ninstrodusca un nuevo dia -->")
+            aux2=input("\ninstrodusca un nuevo mes -->")
+            aux3=input("\ninstrodusca un nuevo dia -->")
+            
+            clie_mod=modify_date_up(data,aux1,aux2,aux3)
+
+            #elimina el cliente sin modifica de la lista de clintes
+            l_c=delate_client(l_c,data)
+
+            #agrega al cliente con la modificacion
+            load_client(l_c,clie_mod)
+           
+        elif opc4==4:
+             #se ingresa los parametros de busqueda
+            aux1=input("\ninstrodusca nombre actual>>>")
+            aux2=input("\ninstrodusca el apellido actual>>>")
+            aux3=input("\nintrodusca el nuero de cliente")
+            
+            #se busca el cliente que conisida con los datos de busqueda
+            data=browser_client(l_c,aux1,aux2,aux3)
+
+            #se modifica el dato relevante
+            aux1=input("\ninstrodusca un nuevo nombre")
+            clie_mod=modify_serv_type(data,aux1)
+
+            #elimina el cliente sin modifica de la lista de clintes
+            l_c=delate_client(l_c,data)
+
+            #agrega al cliente con la modificacion
+            load_client(l_c,clie_mod)
+           
+        elif opc4==5:
+             #se ingresa los parametros de busqueda
+            aux1=input("\ninstrodusca nombre actual>>>")
+            aux2=input("\ninstrodusca el apellido actual>>>")
+            aux3=input("\nintrodusca el nuero de cliente")
+            
+            #se busca el cliente que conisida con los datos de busqueda
+            data=browser_client(l_c,aux1,aux2,aux3)
+
+            #se modifica el dato relevante
+            aux1=input("\ninstrodusca un nuevo nombre")
+            clie_mod=modify_serv_price(data,aux1)
+
+            #elimina el cliente sin modifica de la lista de clintes
+            l_c=delate_client(l_c,data)
+
+            #agrega al cliente con la modificacion
+            load_client(l_c,clie_mod)
+               
+        elif opc4==6:
+             #se ingresa los parametros de busqueda
+            aux1=input("\ninstrodusca nombre actual>>>")
+            aux2=input("\ninstrodusca el apellido actual>>>")
+            aux3=input("\nintrodusca el nuero de cliente")
+            
+            #se busca el cliente que conisida con los datos de busqueda
+            data=browser_client(l_c,aux1,aux2,aux3)
+
+            #se modifica el dato relevante
+            aux1=input("\ninstrodusca un nuevo dia -->")
+            aux2=input("\ninstrodusca un nuevo mes -->")
+            aux3=input("\ninstrodusca un nuevo dia -->")
+            clie_mod=modify_num_clie(data,aux1)
+
+            #elimina el cliente sin modifica de la lista de clintes
+            l_c=delate_client(l_c,data)
+
+            #agrega al cliente con la modificacion
+            load_client(l_c,clie_mod)
+           
         
         
     
-    
+#elimna un cliente de la lista de  clientes
 def option_3():
+    
+    
 def option_4():
 def option_5():
 def option_6():
