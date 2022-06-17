@@ -65,7 +65,6 @@ def modify_date_up(client,day,month,year):
     client[2]=timedelta(day,month,year)
     return client
 
-
 #permite modificar el servicio del cleinte
 def modify_serv_type(client,serv_type):
 

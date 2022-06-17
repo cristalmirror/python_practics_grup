@@ -80,6 +80,24 @@ def browser_client(list_client,date1,date2,date3):
     else:
         
         return list_client[pos]
+#busca los crientes con un typo de servcio
+def browser_client_serv_type(list_client,ty_se):
+    pos=0
+
+    while list_client[pos].client[3]!=ty_se:
+
+        pos+=1
+    else:
+        
+        return list_client[pos]
+
+
+#dice cuantos clientes hay en la lista 
+def total_client_number(list_client):
+    tam_client=len(list_client)
+    return tam_client
+
+
 
 
 

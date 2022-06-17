@@ -191,7 +191,7 @@ def option_2():
             load_client(l_c,clie_mod)
                
         elif opc4==6:
-             #se ingresa los parametros de busqueda
+            #se ingresa los parametros de busqueda
             aux1=input("\ninstrodusca nombre actual>>>")
             aux2=input("\ninstrodusca el apellido actual>>>")
             aux3=input("\nintrodusca el nuero de cliente")
@@ -216,10 +216,35 @@ def option_2():
     
 #elimna un cliente de la lista de  clientes
 def option_3():
+    #se ingresa los parametros de busqueda
+    aux1=input("\ninstrodusca nombre actual>>>")
+    aux2=input("\ninstrodusca el apellido actual>>>")
+    aux3=input("\nintrodusca el nuero de cliente")
+            
+    #se busca el cliente que conisida con los datos de busqueda
+    data=browser_client(l_c,aux1,aux2,aux3)
+
+    #elimina el cliente que se selecciono
+    delate_client(l_c,data)
     
-    
+#imprime los datos de la lista de clientes
 def option_4():
+    #recorre la lista de clientes  y la imprime
+    for i in l_c:
+        print("\n------------------------\n"l_c(i))
+    
+#elimia los clientes con un servicio dado 
 def option_5():
+
+    ts=input("\nintrodusca el servicio para elimiar clientes eliminar>>>")
+
+    l_c=remove_client(l_c,ts)
+
+        
+    
+#realiza el descuento a los clientes con servcio de mas de tres años
 def option_6():
+    
+
 def option_7():
 def option_8():
