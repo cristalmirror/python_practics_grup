@@ -189,7 +189,7 @@ def option_4():
         print("\nAlta: ",view_date_up(i))
         print("\nTipo de Servicio: ",view_serv_type(i))
         print("\nPrecio del Servicio: ",view_serv_price(i))
-        print("\nCodigo del Cliente: ",view_num_clie(I))
+        print("\nCodigo del Cliente: ",view_num_clie(i))
         print("\n")
         
     
