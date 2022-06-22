@@ -1,5 +1,8 @@
+
+#se encuentra bajo GPL v2.0
 #este programa contiene la insterfaz qu el usurio usara para
 #manipular loos datos
+
 from datetime import date
 from tad_list_client import*
 from tad_client import*
