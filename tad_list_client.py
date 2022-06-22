@@ -9,6 +9,7 @@ def creat_list_client():
 #añade los clientes a la lista
 def load_in_list(list_client,cli):
     list_client.append(cli)
+ 
 
 #elimina los clientes que tengan servicio especial
 def remove_client(list_client,ty_se):
@@ -70,11 +71,12 @@ def list_promotion_clients(list_client):
 def browser_client(list_client,date1,date2,date3):
     
     pos=0
-    while
-    (list_client[pos].client[0]!=view_name(date1))and
-    (list_client[pos].client[1]!=view_surname(date2))and
-    (list_client[pos].client[5]!=view_num_clie(date3))and
-    :
+    aux=list_client[pos]
+    while(
+          (view_name(aux)!=view_name(date1)) and
+          (view_surname(aux)!=view_surname(date2)) and
+          (view_num_clie(aux)!=view_num_clie(date3))
+          ):
 
         pos+=1
     else:

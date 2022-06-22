@@ -5,18 +5,24 @@ from datetime import date,timedelta
 #crea la lista para guardar los datos de los cientes
 def creat_client():
 
-    client=["","","","","",0]
+    client=[]
     return client
 
 #carga los datos de los clientes en  la lista
 def load_client(client,name,surnames,serv_type,serv_price,num_clie):
 
-    client[0]=name
-    client[1]=surname
-    client[2]=date.today()
-    client[3]=serv_type
-    client[4]=serv_price
-    client[5]=num_clie
+    client.append(name)
+    client.append(surnames)
+    client.append(date.today())
+    client.append(serv_type)
+    client.append(serv_price)
+    client.append(num_clie)
+    #client[0]=name
+    #client[1]=surname
+    #client[2]=date.today()
+    #client[3]=serv_type
+    #client[4]=serv_price
+    #client[5]=num_clie
     return client
 
 def view_name(client):#devuelve el nombrel del cliente
