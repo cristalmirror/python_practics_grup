@@ -181,8 +181,17 @@ def option_3():
 #imprime los datos de la lista de clientes
 def option_4():
     #recorre la lista de clientes  y la imprime
+    i=0
     for i in l_c:
-        print("\n------------------------\n"l_c(i))
+        print("\n------------------------\n")
+        print("\nNombre: ",view_name(i))
+        print("\nApellido: ",view_surname(i))
+        print("\nAlta: ",view_date_up(i))
+        print("\nTipo de Servicio: ",view_serv_type(i))
+        print("\nPrecio del Servicio: ",view_serv_price(i))
+        print("\nCodigo del Cliente: ",view_num_clie(I))
+        print("\n")
+        
     
 #elimia los clientes con un servicio dado 
 def option_5():
@@ -204,8 +213,17 @@ def option_6():
 def option_7():
     auxi=client_with_promotion(l_c)
 
+    i=0
     for i in auxi:
-        print("\n--------------------------\n",aux1(i))
+        print("\n------------------------\n")
+        print("\nNombre: ",view_name(i))
+        print("\nApellido: ",view_surname(i))
+        print("\nAlta: ",view_date_up(i))
+        print("\nTipo de Servicio: ",view_serv_type(i))
+        print("\nPrecio del Servicio: ",view_serv_price(i))
+        print("\nCodigo del Cliente: ",view_num_clie(I))
+        print("\n")
+    
     
 def option_8():
     
