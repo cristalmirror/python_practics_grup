@@ -6,63 +6,6 @@ from tad_client import*
 
 l_c=creat_list_client()#se crea el una variable de tipo lista de clietes
 
-
-# se crea el menu de opciones
-print("\n----Bienverido por favor introdusca la operacion que desea realizar-----\n\n")
-
-
-print("agregar un cliente                              (1)\n")     
-print("modificar un cliente                            (2)\n")
-print("eliminar un cliente                             (3)\n")
-print("acceder al listado de clientes                  (4)\n")
-print("eliminar cliente con servico x                  (5)\n")
-print("realizar descuento a user de mas de 3anios      (6)\n")
-print("realizar listado de los usuarios con promocion  (7)\n")
-print("imprimir el menu de opciones                    (8)\n")
-opc=1
-opc2=0
-
-#carga el dato de la opcion seleccionada
-opc2=input(">>>")
-
-#evalua las opciones del sistema 
-while opc == 1:
-    if opc2==0:
-
-        print("no se tomo ningura opcion\n")
-
-    elif opc2==1:
-
-        option_1()
-
-    elif opc2 == 2:
-
-        option_2()
-        
-    elif opc2 == 3:
-
-        option_3()
-        
-    elif opc2 == 4:
-
-        option_4()
-        
-    elif opc2 == 5:
-
-        option_5()
-        
-    elif opc2 == 6:
-
-        option_6()
-        
-    elif opc2 == 7:
-        option_7()
-
-    elif opc2 == 8:
-        option_8()
-        
-    opc=input("desea realizar otra operacion \nSI(1)\nNO(0)\n")
-
 #introduce los datos al tad lista de cliete que se creo
 def option_1():
     
@@ -272,4 +215,62 @@ def option_8():
     print("realizar descuento a user de mas de 3anios      (6)\n")
     print("realizar listado de los usuarios con promocion  (7)\n")
     print("imprimir el menu de opciones                    (8)\n")
+
+
+
+# se crea el menu de opciones
+print("\n----Bienverido por favor introdusca la operacion que desea realizar-----\n\n")
+
+
+print("agregar un cliente                              (1)\n")     
+print("modificar un cliente                            (2)\n")
+print("eliminar un cliente                             (3)\n")
+print("acceder al listado de clientes                  (4)\n")
+print("eliminar cliente con servico x                  (5)\n")
+print("realizar descuento a user de mas de 3anios      (6)\n")
+print("realizar listado de los usuarios con promocion  (7)\n")
+print("imprimir el menu de opciones                    (8)\n")
+opc=1
+opc2=0
+
+#carga el dato de la opcion seleccionada
+opc2=input(">>>")
+
+#evalua las opciones del sistema 
+while opc == 1:
+    if opc2==0:
+
+        print("no se tomo ningura opcion\n")
+
+    elif opc2==1:
+
+        option_1()
+
+    elif opc2 == 2:
+
+        option_2()
+        
+    elif opc2 == 3:
+
+        option_3()
+        
+    elif opc2 == 4:
+
+        option_4()
+        
+    elif opc2 == 5:
+
+        option_5()
+        
+    elif opc2 == 6:
+
+        option_6()
+        
+    elif opc2 == 7:
+        option_7()
+
+    elif opc2 == 8:
+        option_8()
+        
+    opc=input("desea realizar otra operacion \nSI(1)\nNO(0)\n")
 
